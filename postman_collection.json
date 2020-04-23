@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "59f25b1c-cc2f-414c-8b44-55c14200bbe0",
+		"name": "domyland",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "list news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/news",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/news/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"news",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create news",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/news/?title=test title&preview=test preview&body=test body&date=2020-01-01&image=https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png&author_id=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"news",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "test title"
+						},
+						{
+							"key": "preview",
+							"value": "test preview"
+						},
+						{
+							"key": "body",
+							"value": "test body"
+						},
+						{
+							"key": "date",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "image",
+							"value": "https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png"
+						},
+						{
+							"key": "author_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit news",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/news/1?title=test title&preview=test preview&body=test body&date=2020-01-01&image=https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png&author_id=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"news",
+						"1"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "test title"
+						},
+						{
+							"key": "preview",
+							"value": "test preview"
+						},
+						{
+							"key": "body",
+							"value": "test body"
+						},
+						{
+							"key": "date",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "image",
+							"value": "https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png"
+						},
+						{
+							"key": "author_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete news",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/news/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"news",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list news only one author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/author/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"author",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/user?name=Test&password=test&c_password=test&email=name@example.test",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"user"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Test"
+						},
+						{
+							"key": "password",
+							"value": "test"
+						},
+						{
+							"key": "c_password",
+							"value": "test"
+						},
+						{
+							"key": "email",
+							"value": "name@example.test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/login?username=test&password=test",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test"
+						},
+						{
+							"key": "password",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creare author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/author?name=Test",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"author"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete author",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/author/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"author",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiODY0Mjc5NmNlZjk5NGU2MWQ0N2I1N2EyOTU5ZmE1NzI1ZjBmZWRkZDgyNDExZjgwZWI3YzcyODMzMTA2MzdiMTI1YzFiODQ3ODUyYTAxNjYiLCJpYXQiOjE1ODc2NTY2MzYsIm5iZiI6MTU4NzY1NjYzNiwiZXhwIjoxNjE5MTkyNjM2LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.ZsjWrFoW4cgvmeLhWUXz38Km6TXIuf9u_uyhFdLbcv1D1I1C8qy-lCLkRrLoG4M8J4xKLQZnFhjrJGPxyPud7UORk2oi0ySU3q9gHMDtTGrvscQrYkW4U1EkiNV1jgk1sMJHWk1nS39y2CQkFIfSPkWn993BUmDSTSekuGUwyORmRG2CcYKTBkDqHtPy3kzzF7ccD2mozyCwJMuhSXAbQfvKWjJHfZUxeLRWw0RZZdhViaHMaJPC0thaAcmds_XNST7JAqZaoi4IWFwZ-j7TJn3cJW6wSsZ70xv02o0-BZ8vcanc12laihzOWjntv_0WFpKa8xiA2F92p4Kt48ot7jXk3lmynuo-0vbBTtDVv90Gc-n_r0Ebdn7TJ9dqHLQRGpKerT_3ZM_B7UFhhN3AYaeL9AGhhSFNXpnUsX3CyKrFmVq_Rm-nBhLJ79aQ-sHUaIe6YsJB3Jj4nDMCyQDL0YQ-yaGApWr_dvJ54nBiGlwCULB_JoVII6ssVyUrZ5u7fBb8-XrnzBMCiAgfAdEhFIEynHizEjQB0NL1jJGrPKBwDvP_WAHYmOxZETuGfPzSOvKIvF41ESSZzpCoUDV5xnBZ86LZzVEsvANluczYSM77xp0QHt55fVnbKBN4yxpW2X7YqHorVdA_rJqDdE9CL1zz_GwY-Kfg96EsYEVoTj8",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9206acc8-0aec-4864-a84c-2562ff6ea34e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a8acf340-7504-412b-995d-eda9d6719efd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "62862dae-07ad-4d7b-9b84-4d8786f9dd51",
+			"key": "host",
+			"value": "http://127.0.0.18000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
