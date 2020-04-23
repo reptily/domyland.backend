@@ -44,3 +44,6 @@ docker exec app ./artisan migrate
 
 ## Демо
 Демонстрационная версия доступна по адресу http://go2ride.asuscomm.com:7000/
+
+## Документация
+Задокументировано с помощи postman, файл: postman_collection.json
