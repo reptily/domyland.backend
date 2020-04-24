@@ -40,6 +40,11 @@ docker exec app ./artisan key:generate
 docker exec app ./artisan migrate
 ```
 
+* Инициализация ключей для паспорта
+```bash
+docker exec app ./artisan passport:install 
+```
+
 После установки веб проект доступен по адрессу http://127.0.0.1:7000/
 
 ## Демо
