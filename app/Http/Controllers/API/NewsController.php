@@ -23,15 +23,17 @@ class NewsController extends Controller
      */
     public function index(Request $request)
     {
-        return new NewsCollection(News::paginate((int)$request->per_page ?? 15));
+        return new NewsCollection(News::orderBy('published_at','desc')->paginate((int)$request->per_page ?? 15));
     }
 
     /**
-     *
+     * @param \Illuminate\Http\Request $request
+     * @return NewsCollection
      */
     public function indexAuthors(Request $request){
-        return new NewsCollection(News::where('author_id', $request->id ?? 0)->paginate((int)$request->per_page ?? 15));
+        return new NewsCollection(News::where('author_id', $request->id ?? 0)->orderBy('published_at','desc')->paginate((int)$request->per_page ?? 15));
     }
+
 
     /**
      * Show the form for creating a new resource.
