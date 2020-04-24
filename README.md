@@ -47,3 +47,5 @@ docker exec app ./artisan migrate
 
 ## Документация
 Задокументировано с помощи postman, файл: postman_collection.json
+Логин: demo\
+Пароль: demo
